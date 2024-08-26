@@ -1,0 +1,10 @@
+{ 
+    "subnets": [
+        "subnet-0008b5cc9b37d020a",
+        "subnet-0281bd652400783b5",
+        "subnet-07cbd8ee46fbb612a"
+    ],
+    "awslogs_group": "/ecs/nginx",
+    "execution_role_arn": "arn:aws:iam::593793058131:role/ECSTaskExecutionRole"
+
+}
