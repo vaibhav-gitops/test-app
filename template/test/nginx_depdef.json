@@ -1,0 +1,20 @@
+{
+    "trafficShiftingConfig": {
+        "percent": 30,
+        "waitInterval": 60,
+        "type" : "CANARY"
+    },
+    "targetGroupArns": [
+        "arn:aws:elasticloadbalancing:us-east-1:593793058131:targetgroup/prod-tg/804ea8f39a7abd92",
+        "arn:aws:elasticloadbalancing:us-east-1:593793058131:targetgroup/test-tg/f7701171d2b74b44"
+    ],
+    "stabilityCheck": {
+        "timeoutPerTask" : 25,
+        "timeout" : 220
+    },
+    "gmDeploymentCircuitBreaker": {
+        "rollback": true,
+        "failureThresholdPercent": 25
+    },
+    "initialScale": 45
+}
