@@ -5,8 +5,8 @@
         "type" : "CANARY"
     },
     "targetGroupArns": [
-        "arn:aws:elasticloadbalancing:us-east-1:593793058131:targetgroup/prod-tg/804ea8f39a7abd92",
-        "arn:aws:elasticloadbalancing:us-east-1:593793058131:targetgroup/test-tg/f7701171d2b74b44"
+        "arn:aws:elasticloadbalancing:us-east-1:593793058131:targetgroup/prod-tg1/28895cbf848a6cce",
+        "arn:aws:elasticloadbalancing:us-east-1:593793058131:targetgroup/test-tg1/4a20282e88b9ba8b"
     ],
     "stabilityCheck": {
         "timeoutPerTask" : 25,
