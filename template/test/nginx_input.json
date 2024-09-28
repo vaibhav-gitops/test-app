@@ -1,7 +1,0 @@
-{
-    "ref" : {
-        "file" : "template/test_infra.json"
-    },
-    "nginx_container_image": "public.ecr.aws/nginx/nginx:latest",
-    "container_port": 80
-}

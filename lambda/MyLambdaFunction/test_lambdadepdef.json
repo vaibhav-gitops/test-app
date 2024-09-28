@@ -1,0 +1,21 @@
+{
+  "alias": "PROD",
+  "trafficShiftingEnabled": true,
+  "trafficShiftingConfig": {
+    "percent": 50,
+    "waitInterval": 60,
+    "type" : "CANARY"
+  },
+  "environmentVariables": {
+    "Regions": ["us-east-1"]
+  },
+  "triggers": ["apigateway.amazonaws.com", "s3.amazonaws.com", "sns.amazonaws.com"],
+  "deleteOldVersion": true,
+  "alarms": {
+    "alarmNames": [
+      "string"
+    ],
+    "enable": true,
+    "rollback": true
+  }
+}
