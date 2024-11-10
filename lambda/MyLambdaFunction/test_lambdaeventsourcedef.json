@@ -1,0 +1,22 @@
+{
+  "PushEventSources": [
+    {
+      "Service": "elasticloadbalancing.amazonaws.com",
+      "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:593793058131:targetgroup/test-lambda/825d65831776844d"
+    },
+    {
+      "Service": "apigateway.amazonaws.com",
+      "ApiId": "e9eowewp3h",
+      "RouteId": "squcprb",
+      "AlaisStageVariableName": "lambdaAlias"
+    }
+  ],
+  "PullEventSources": {
+    "EventSourceMapping": {
+      "EventSourceArn": "arn:aws:sqs:us-east-1:593793058131:TestQueue",
+      "FunctionName": "MyLambdaFunction",
+      "BatchSize": 10,
+      "MaximumBatchingWindowInSeconds": 60
+    }
+  }
+}

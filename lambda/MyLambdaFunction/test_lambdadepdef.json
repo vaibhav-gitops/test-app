@@ -7,9 +7,8 @@
     "type" : "CANARY"
   },
   "environmentVariables": {
-    "Regions": ["us-east-1"]
+    "region": "us-east-1"
   },
-  "triggers": ["apigateway.amazonaws.com", "s3.amazonaws.com", "sns.amazonaws.com"],
   "deleteOldVersion": true,
   "alarms": {
     "alarmNames": [
@@ -17,5 +16,9 @@
     ],
     "enable": true,
     "rollback": true
+  },
+  "readinessCheck": {
+    "waitInterval": 10,
+    "maxRetries": 5
   }
 }
