@@ -3,9 +3,6 @@ kind: Ingress
 metadata:
   name: test-app
   namespace: default  # Adjust the namespace if needed
-  annotations:
-    nginx.ingress.kubernetes.io/canary: "true"
-    nginx.ingress.kubernetes.io/canary-weight: "20"
 spec:
   rules:
     - host: test-app.example.com  # Use your domain or service
@@ -18,3 +15,11 @@ spec:
                 name: test-app
                 port:
                   number: 80
+          - path: /admin
+            pathType: Prefix
+            backend:
+              service:
+                name: test-app
+                port:
+                  number: 80
+

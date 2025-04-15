@@ -1,0 +1,16 @@
+kind: DeploymentDefinition
+metadata:
+  name: test-app
+spec:
+  trafficShiftingConfig:
+    percent: 30
+    waitInterval: 10
+    type: CANARY
+  rollback: true
+  deleteOldVersion: true
+  alarms:
+    alarmNames:
+      - "alarm-1"
+  readinessCheck:
+    waitInterval: 15
+    maxRetries: 5
