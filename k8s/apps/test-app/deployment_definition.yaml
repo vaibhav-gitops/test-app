@@ -12,5 +12,5 @@ spec:
     alarmNames:
       - "alarm-1"
   readinessCheck:
-    waitInterval: 15
+    waitInterval: 25
     maxRetries: 5
