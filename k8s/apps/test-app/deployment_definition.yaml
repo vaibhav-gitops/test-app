@@ -4,13 +4,14 @@ metadata:
 spec:
   trafficShiftingConfig:
     percent: 30
-    waitInterval: 10
-    type: CANARY
+    waitInterval: 5
+    type: LINEAR
   rollback: true
   deleteOldVersion: true
   alarms:
     alarmNames:
       - "alarm-1"
   readinessCheck:
-    waitInterval: 25
+    waitInterval: 15
     maxRetries: 5
+  controllerType: alb
