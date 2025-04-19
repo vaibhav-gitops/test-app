@@ -20,4 +20,3 @@ spec:
             - "-text=BLUE VERSION"
           ports:
             - containerPort: 5678
-
