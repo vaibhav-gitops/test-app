@@ -17,6 +17,6 @@ spec:
         - name: http-echo
           image: hashicorp/http-echo
           args:
-            - "-text=BLUE VERSION"
+            - "-text=GREEN VERSION"
           ports:
             - containerPort: 5678
