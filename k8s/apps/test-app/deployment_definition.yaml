@@ -14,4 +14,4 @@ spec:
   readinessCheck:
     waitInterval: 15
     maxRetries: 5
-  controllerType: nginx
+  controllerType: alb
