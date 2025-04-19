@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: test-app-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
 spec:
   rules:
     - host: test-app.local
