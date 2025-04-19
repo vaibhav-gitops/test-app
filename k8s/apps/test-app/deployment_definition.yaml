@@ -8,9 +8,6 @@ spec:
     type: LINEAR
   rollback: true
   deleteOldVersion: true
-  alarms:
-    alarmNames:
-      - "alarm-1"
   readinessCheck:
     waitInterval: 15
     maxRetries: 5

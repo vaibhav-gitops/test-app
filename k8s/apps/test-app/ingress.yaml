@@ -15,4 +15,3 @@ spec:
                 name: test-app
                 port:
                   number: 80
-
